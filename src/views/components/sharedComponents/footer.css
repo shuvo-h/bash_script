@@ -1,0 +1,11 @@
+.pub_footer{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(12, 119, 155);
+    padding: 50px 30px;
+}
+
+.footerIcon{
+    margin: 5px;
+}

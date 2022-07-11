@@ -1,0 +1,52 @@
+.logReg_container{
+    margin: 2% 10%;
+    min-height: calc(100vh - 372px);
+    position: relative;
+}
+
+
+.logReg_container .reg_form {
+        width: 400px;
+        margin: auto;
+}
+.logReg_container .reg_form input{
+    width: 400px;
+}
+.logReg_container .reg_form div{
+    display: flex;
+    justify-content: center;
+}
+
+.reg_form p{
+    margin: 0 0 4px 0;
+    color: red;
+    height: 12px;
+}
+.reg_form div button{
+    margin-top: 10px;
+}
+
+.reg_modal_container{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_modal_wrapper{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
+.reg_modal_wrapper div:nth-child(1){
+    border-radius: 8px;
+    height: 100%;
+    border: 1px dotted blue;
+}
