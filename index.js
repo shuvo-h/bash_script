@@ -17,7 +17,7 @@ app.get('/cook', (req, res) => {
       res.cookie("jwt_token","df44g1gee65g4eg1",{
           httpOnly: true,
           maxAge: 60 * 60 * 1000,  // 1 min
-          sameSite: "strict",
+          sameSite:"none",
           secure: true
       }).json({a:"Abc"})
     
