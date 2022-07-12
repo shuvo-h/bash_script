@@ -1,11 +1,10 @@
 const express = require('express')
-const app = express()
 const cors = require("cors")
+const app = express()
 require("dotenv").config()
 const port = process.env.PORT || 5000
 
 app.use(cors())
-
 
 app.get('/cook', (req, res) => {
     
@@ -13,7 +12,7 @@ app.get('/cook', (req, res) => {
         httpOnly: true,
         maxAge: 7 * 24 * 60 * 60 * 1000,
         sameSite: "none",
-        secure: true
+        secure: false
     }).json({a:"Abc"})
 
 })
