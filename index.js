@@ -27,7 +27,8 @@ app.get('/cook', (req, res) => {
 
 app.get('/recook', (req, res) => {
   console.log(req.cookies.jwt_token);
-  res.send(req.cookies.jwt_token)
+  const token = req.cookies.jwt_token ? req.cookies.jwt_token : "no cookie saved"
+  res.send(token)
 })
 
 app.get('/', (req, res) => {
