@@ -14,8 +14,8 @@ app.get('/cook', (req, res) => {
     res.cookie("testSiteCook","df44g1gee65g4eg1",{
         httpOnly: true,
         maxAge: 7 * 24 * 60 * 60 * 1000,
-        sameSite: "none",
-        secure: true
+        // sameSite: "none",
+        // secure: true
     }).json({a:"Abc"})
 
 })
