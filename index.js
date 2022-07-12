@@ -12,20 +12,16 @@ app.use(cors({
 }))
 
 app.get('/cook', (req, res) => {
-    /*
-      res.cookie("testSiteCook","df44g1gee65g4eg1",{
+    
+      res.cookie("jwt_token","df44g1gee65g4eg1",{
           httpOnly: true,
-          expires: new Date(Date.now() + 25892000000),
+          maxAge: 60 * 1000,  // 1 min
           sameSite: "strict",
-          // secure: true
+          secure: true
       }).json({a:"Abc"})
-    */
-      res.setHeader('Set-Cookie', cookie.serialize('name', String("query.name"), {
-        httpOnly: true,
-        maxAge: 60 * 60 * 24 * 7 // 1 week
-      }))
-      res.json({we:"Ended Response"})
-
+    
+    // res.send("ac")
+    // res.clearCookie("access_tok").send("cook clear")
 })
 
 app.get('/', (req, res) => {
