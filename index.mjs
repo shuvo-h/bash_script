@@ -55,5 +55,5 @@ app.use(notFoundHandler);
 app.use(errorHandler)
 
 app.listen(port,()=>{
-    console.log("Article 2 Video runnint at ",port);
+    console.log("Word counter wordpress running at ",port);
 })
