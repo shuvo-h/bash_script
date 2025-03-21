@@ -1,0 +1,36 @@
+Type of shell:
+- bash
+- sh 
+- ksh
+- tsh 
+- fish 
+- zsh
+
+
+>> cat /etc/os-release      // check the operating system
+>> echo $0                  // check which bash currently using
+>> cat /etc/shells          // list of available shells 
+- give file execution permission if need
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
